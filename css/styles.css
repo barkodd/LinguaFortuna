@@ -60,6 +60,11 @@
   margin: auto;
 }
 
+@media screen and (max-width: 900px) {
+  #readMore {
+    margin-left: 0.5rem;
+  }
+}
 #readMore {
   background-color: #7abacb;
   border-style: none;

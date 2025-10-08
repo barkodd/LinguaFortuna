@@ -73,6 +73,12 @@ $lf-dark-blue: #14434D;
   margin: auto;
 
 }
+@media screen and (max-width: 900px) {
+#readMore{
+  margin-left: 0.5rem;
+  
+}
+}
 #readMore{
   background-color: $lf-light-blue;
   border-style: none;
