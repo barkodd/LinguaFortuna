@@ -2,8 +2,9 @@ $header-color: #f6feff;
 $background-color: white;
 $border-color: rgb(219, 219, 219);
 $box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-$light-blue: #2a859d;
-
+$lf-med-blue: #2a859d;
+$lf-light-blue: #7abacb;
+$lf-dark-blue: #14434D;
 
 * {
   margin: 0;
@@ -47,7 +48,7 @@ $light-blue: #2a859d;
   h1 {
     font-size: 2rem;
     font-weight: 700;
-    color: $light-blue;
+    color: $lf-med-blue;
     line-height: 1.2;
     text-transform: uppercase;
     margin: 0;
@@ -79,7 +80,7 @@ main {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: rgb(188, 185, 182);
+  background-color: $header-color;
   font-size: 0.8rem;
 }
 // burger dropdown menu for mobile
@@ -239,6 +240,7 @@ footer {
   .article-title {
     font-weight: 650;
     font-size: 1.5rem;
+    color: $lf-med-blue;
   }
   .article-desc {
     color: #3a3a3a;
@@ -528,7 +530,9 @@ footer {
 .h2-home {
   h2 {
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $lf-med-blue;
   }
 }
 //latest painted models image gallery and contact form(desktop only) wrapper

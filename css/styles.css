@@ -68,7 +68,7 @@ main {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: rgb(188, 185, 182);
+  background-color: #f6feff;
   font-size: 0.8rem;
 }
 
@@ -205,6 +205,7 @@ footer {
 .articles .article-title {
   font-weight: 650;
   font-size: 1.5rem;
+  color: #2a859d;
 }
 .articles .article-desc {
   color: #3a3a3a;
@@ -465,7 +466,9 @@ footer {
 
 .h2-home h2 {
   margin-top: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2a859d;
 }
 
 .gallery-wrapper {
