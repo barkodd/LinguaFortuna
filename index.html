@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Inter:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Home: Miniature Painting</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="burger">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-label">
+          <img class="open" src="images/burger.png" alt="dropdown menu" />
+          <img
+            class="close"
+            src="images/close.png"
+            alt="dropdown menu - close"
+          />
+        </label>
+        <div class="burger-content">
+          <nav>
+            <ul>
+              <li><a class="underline" href="index.html">Home</a></li>
+              <li><a class="underline" href="articles.html">Articles</a></li>
+              <li><a class="underline" href="contacts.html">Contacts</a></li>
+              <li><a class="underline" href="specs.html">Specifications</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <section class="hero" id="hero">
+        <div class="hero-inner">
+          <h1>Miniature Painting</h1>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div class="articles">
+        <section class="top item-1">
+          <a href="skaventide.html">
+            <img src="images/skaventide2.jpg" alt="Skaventide boxset review" />
+            <p class="article-title">Skaventide Unleashed</p>
+            <p class="article-desc">Demigods and Rat-Things, Yes-Yes</p>
+          </a>
+        </section>
+        <div class="bottom-container">
+          <section class="bottom item-2">
+            <a href="tyranids-painting-guide.html">
+              <img src="images/tyr5.jpg" alt="Tyranids painting guide" />
+              <p class="article-title">Guide: Painting Tyranids</p>
+              <p class="article-desc">
+                Colorful Horrors From The Depths of Space
+              </p>
+            </a>
+          </section>
+          <section class="bottom item-3">
+            <a href="black-templars-painting-guide.html">
+              <img src="images/black.jpg" alt="Black Templars painting guide" />
+              <p class="article-title">Guide: Painting Black Armour</p>
+              <p class="article-desc">
+                I See a Plastic Model and I Want It Painted Black
+              </p>
+            </a>
+          </section>
+        </div>
+      </div>
+      <div class="h2-home">
+        <h2>Latest Painted Models</h2>
+      </div>
+      <div class="gallery-wrapper">
+        <section class="gallery">
+          <article class="gallery-item">
+            <img src="images/stormcast.jpg" alt="Stormcast Ethernal" />
+            <p>
+              A Stormcast Ethernal Vindictor painted to look as a stone statue -
+              a little side project that I did for DnD. The miniature was
+              painted with mostly washes and drybrushing.
+            </p>
+          </article>
+          <article class="gallery-item">
+            <img src="images/dread.jpg" alt="Redemptor Dreadnought" />
+            <p>Redemptor Dreadnought - my first ever vehicle model.</p>
+          </article>
+
+          <article class="gallery-item">
+            <img src="images/grim.jpg" alt="Chaplain Grimaldus" />
+            <p>Chaplan Grimaldus and his retinue.</p>
+          </article>
+          <article class="gallery-item">
+            <img
+              src="images/lotr.jpg"
+              alt="Lord Of The Rings - Aragorn, Gimli and Legolas diorama"
+            />
+            <p>
+              The first diorama that I've ever did, picturing the Three Hunters
+              - Aragorn, Gimli and Legolas on their quest across the fields of
+              Rohan. Also, the first LOTR miniatures I ever painted.
+            </p>
+          </article>
+        </section>
+        <section class="contact">
+          <h3>Contact us</h3>
+          <p>
+            If you wish to get in touch with our team, leave your message below
+            and our kind cave trolls will be let out of their cages to carefully
+            rewrite your message on the parchment paper, and deliver it to us.
+            Oh, and you can pick a troll who'll be responsible for your message.
+          </p>
+
+          <form>
+            <label for="fname">First name:</label><br />
+            <input
+              class="string-input"
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="John"
+              required
+            /><br />
+            <label for="lname">Last name:</label><br />
+            <input
+              class="string-input"
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Doe"
+              required
+            /><br />
+            <label for="email">Email:</label><br />
+            <input
+              class="string-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john.doe@example.com"
+              required
+            /><br />
+            <label for="tel">Phone number:</label><br />
+            <input
+              class="string-input"
+              type="tel"
+              id="tel"
+              name="phone-number"
+              placeholder="123-456-7890"
+              required
+            /><br />
+            <label for="message">Your message:</label><br />
+            <textarea name="message" id="message" required></textarea><br />
+            <fieldset required>
+              <legend>Pick a troll:</legend>
+              <input
+                type="radio"
+                id="Borloth"
+                name="pick_a_troll"
+                value="Borloth"
+                required
+              />
+              <label for="Borloth">Borloth</label><br />
+              <input
+                type="radio"
+                id="Ubnog"
+                name="pick_a_troll"
+                value="Ubnog"
+              />
+              <label for="Ubnog">Ubnog</label><br />
+              <input
+                type="radio"
+                id="Durgurk"
+                name="pick_a_troll"
+                value="Durgurk"
+              />
+              <label for="Durgurk">Durgurk</label>
+            </fieldset>
+            <br />
+            <input class="button" type="submit" value="Send message" />
+          </form>
+        </section>
+      </div>
+      <a href="index.html">
+        <div class="scroll-btn">
+          <div id="scroll-arrow"></div>
+        </div>
+      </a>
+    </main>
+
+    <footer>
+      <p>
+        This website and all of its contents are ©
+        <time datetime="2024-01-01">2024</time> Miniature Painting • This
+        website is completely unofficial and in no way endorsed by Games
+        Workshop Limited • Any trademarks are used without permission • All
+        rights reserved • Please do not use our pictures or content without
+        permission!
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Inter:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Contacts: Miniature Painting</title>
+  </head>
+  <body>
+    <header>
+      <div class="burger">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-label">
+          <img class="open" src="images/burger.png" alt="dropdown menu" />
+          <img
+            class="close"
+            src="images/close.png"
+            alt="dropdown menu - close"
+          />
+        </label>
+        <div class="burger-content">
+          <nav>
+            <ul>
+              <li><a class="underline" href="index.html">Home</a></li>
+              <li><a class="underline" href="articles.html">Articles</a></li>
+              <li><a class="underline" href="contacts.html">Contacts</a></li>
+              <li><a class="underline" href="specs.html">Specifications</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="hero-inner">
+          <h1>Miniature Painting</h1>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="page-contact">
+        <h2>Contact us</h2>
+        <p>
+          If you wish to get in touch with our team, leave your message below
+          and our kind cave trolls will be let out of their cages to carefully
+          rewrite your message on the parchment paper, and deliver it to us. Oh,
+          and you can pick a troll who'll be responsible for your message.
+        </p>
+
+        <form>
+          <label for="fname">First name:</label><br />
+          <input
+            class="string-input"
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="John"
+            required
+          /><br />
+          <label for="lname">Last name:</label><br />
+          <input
+            class="string-input"
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Doe"
+            required
+          /><br />
+          <label for="email">Email:</label><br />
+          <input
+            class="string-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="john.doe@example.com"
+            required
+          /><br />
+          <label for="tel">Phone number:</label><br />
+          <input
+            class="string-input"
+            type="tel"
+            id="tel"
+            name="phone-number"
+            placeholder="123-456-7890"
+            required
+          /><br />
+          <label for="message">Your message:</label><br />
+          <textarea name="message" id="message" required></textarea>
+          <br />
+          <fieldset required>
+            <legend>Pick a troll:</legend>
+            <input
+              type="radio"
+              id="Borloth"
+              name="pick_a_troll"
+              value="Borloth"
+              required
+            />
+            <label for="Borloth">Borloth</label><br />
+            <input type="radio" id="Ubnog" name="pick_a_troll" value="Ubnog" />
+            <label for="Ubnog">Ubnog</label><br />
+            <input
+              type="radio"
+              id="Durgurk"
+              name="pick_a_troll"
+              value="Durgurk"
+            />
+            <label for="Durgurk">Durgurk</label>
+          </fieldset>
+          <br />
+          <input class="button" type="submit" value="Send message" />
+        </form>
+      </section>
+      <a href="contacts.html">
+        <div class="scroll-btn">
+          <div id="scroll-arrow"></div>
+        </div>
+      </a>
+    </main>
+    <footer>
+      <p>
+        This website and all of its contents are ©
+        <time datetime="2024-01-01">2024</time> Miniature Painting • This
+        website is completely unofficial and in no way endorsed by Games
+        Workshop Limited • Any trademarks are used without permission • All
+        rights reserved • Please do not use our pictures or content without
+        permission!
+      </p>
+    </footer>
+  </body>
+</html>
