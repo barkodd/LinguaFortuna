@@ -83,7 +83,18 @@ $lf-dark-blue: #14434D;
   font-weight: bold;
   
 }
-#more {display: none;}
+#more {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+  display: block; /* важливо, щоб можна було анімувати */
+}
+
+#more.show {
+  max-height: 1000px; /* вистачить для твого контенту */
+  opacity: 1;
+}
 .org-about-us{
   
   margin: auto;

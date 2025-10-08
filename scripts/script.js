@@ -3,13 +3,15 @@ function myFunction() {
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("readMore");
 
-  if (dots.style.display === "none") {
+  if (moreText.classList.contains("show")) {
+    // згортаємо
     dots.style.display = "inline";
     btnText.innerHTML = "En savoir plus";
-    moreText.style.display = "none";
+    moreText.classList.remove("show");
   } else {
+    // розгортаємо
     dots.style.display = "none";
     btnText.innerHTML = "Réduire";
-    moreText.style.display = "inline";
+    moreText.classList.add("show");
   }
 }
