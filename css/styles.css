@@ -59,6 +59,20 @@
   margin: auto;
 }
 
+#readMore {
+  background-color: #7abacb;
+  border-style: none;
+  color: white;
+  padding: 1rem;
+  width: 12rem;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#more {
+  display: none;
+}
+
 .org-about-us {
   margin: auto;
   margin-top: 2rem;

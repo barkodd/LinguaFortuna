@@ -73,6 +73,17 @@ $lf-dark-blue: #14434D;
   margin: auto;
 
 }
+#readMore{
+  background-color: $lf-light-blue;
+  border-style: none;
+  color: white;
+  padding: 1rem;
+  width: 12rem;
+  font-size: x-large;
+  font-weight: bold;
+  
+}
+#more {display: none;}
 .org-about-us{
   
   margin: auto;
@@ -82,6 +93,7 @@ $lf-dark-blue: #14434D;
   p{
     margin: 0.5rem;
     font-size: 1.2rem;
+    
   }
 
 }
