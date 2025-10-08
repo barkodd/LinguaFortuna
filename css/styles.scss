@@ -1,7 +1,9 @@
-$header-color: rgb(236, 235, 231);
-$background-color: rgb(240, 243, 243);
+$header-color: #f6feff;
+$background-color: white;
 $border-color: rgb(219, 219, 219);
 $box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+$light-blue: #2a859d;
+
 
 * {
   margin: 0;
@@ -12,18 +14,44 @@ $box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 // hero styles with font size adapting to resolution
 .hero {
   width: 100%;
-  height: 16rem;
+  height: 8rem;
   display: flex;
-  font-size: 5rem;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-    url(../images/hero.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color:background-color;
+
+  .hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; // space between logo and text
+  }
+
+  .hero-logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+      width: 8rem;
+      height: auto;
+    }
+
+    .divider {
+      width: 0.125rem;
+      height: 7rem;
+      background-color: #2e8b9d; // match your theme color
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $light-blue;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -139,7 +167,28 @@ footer {
 @media screen and (min-width: 900px) {
   .hero {
     margin-top: 3rem;
-    height: 50vh;
+    height: 30vh;
+
+
+  .hero-logo {
+ 
+
+    img {
+      width: 16rem;
+      
+    }
+
+    .divider {
+      width: 0.125rem;
+      height: 14rem;
+      
+    }
+  }
+
+  h1 {
+    font-size: 6rem;
+
+  }
   }
   .burger {
     position: fixed !important;
