@@ -1,12 +1,12 @@
 $header-color: #f6feff;
-$background-color: white;
+$background-color: rgb(242, 242, 242);
 $border-color: rgb(219, 219, 219);
 $box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 $lf-med-blue: #2a859d;
 $lf-light-blue: #7abacb;
-$lf-dark-blue: #14434D;
+$lf-dark-blue: #14434d;
 @font-face {
-  font-family:"Glacial Indifference" ;
+  font-family: "Glacial Indifference";
   src: url(/fonts/GlacialIndifference-Regular.otf);
 }
 
@@ -19,12 +19,13 @@ $lf-dark-blue: #14434D;
 
 // hero styles with font size adapting to resolution
 .hero {
+  margin-top: 3rem;
   width: 100%;
   height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:$background-color;
+  background-color: $background-color;
 
   .hero-inner {
     display: flex;
@@ -59,27 +60,25 @@ $lf-dark-blue: #14434D;
     margin: 0;
   }
 }
-.org-desc{
+.org-desc {
   margin: 1rem;
   padding: 1rem;
   color: $lf-dark-blue;
-  font-weight:bold ;
+  font-weight: bold;
   text-align: center;
   border: $lf-med-blue;
   background-color: $lf-light-blue;
   color: white;
-  
+
   max-width: 1200px;
   margin: auto;
-
 }
 @media screen and (max-width: 900px) {
-#readMore{
-  margin-left: 0.5rem;
-  
+  #readMore {
+    margin-left: 0.5rem;
+  }
 }
-}
-#readMore{
+#readMore {
   background-color: $lf-light-blue;
   border-style: none;
   color: white;
@@ -87,7 +86,6 @@ $lf-dark-blue: #14434D;
   width: 12rem;
   font-size: x-large;
   font-weight: bold;
-  
 }
 #more {
   max-height: 0;
@@ -101,18 +99,15 @@ $lf-dark-blue: #14434D;
   max-height: 2000px;
   opacity: 1;
 }
-.org-about-us{
-  
+.org-about-us {
   margin: auto;
   margin-top: 2rem;
   max-width: 1200px;
-  
-  p{
+
+  p {
     margin: 0.5rem;
     font-size: 1.2rem;
-    
   }
-
 }
 
 @media screen and (max-width: 900px) {
@@ -146,10 +141,14 @@ footer {
 // burger dropdown menu for mobile
 .burger {
   height: 3rem;
-  background: $header-color;
+  background: white;
+
   border-style: none;
-  position: relative;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   display: flex;
+  width: 100%;
   justify-content: flex-end;
   .close {
     display: none;
@@ -226,36 +225,30 @@ footer {
 }
 // desktop hero and navigation menu (links on top of the screen instead of dropdown)
 @media screen and (min-width: 900px) {
-  .org-desc{
+  .org-desc {
     font-size: 2rem;
     padding-bottom: 4rem;
     padding-top: 5rem;
-    
+    margin-top: 5rem;
   }
   .hero {
-    margin-top: 3rem;
+    margin-top: 8rem;
     height: 30vh;
 
+    .hero-logo {
+      img {
+        width: 16rem;
+      }
 
-  .hero-logo {
- 
-
-    img {
-      width: 16rem;
-      
+      .divider {
+        width: 0.125rem;
+        height: 14rem;
+      }
     }
 
-    .divider {
-      width: 0.125rem;
-      height: 14rem;
-      
+    h1 {
+      font-size: 6rem;
     }
-  }
-
-  h1 {
-    font-size: 6rem;
-
-  }
   }
   .burger {
     position: fixed !important;
@@ -706,12 +699,9 @@ fieldset {
     position: sticky !important;
     top: 5rem;
     padding-bottom: 24rem;
-    .contact-image{
-      
-      img{
+    .contact-image {
+      img {
         width: 20rem;
-        
-
       }
     }
   }
@@ -762,14 +752,7 @@ fieldset {
   //different images for three articles
   .one {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-      url(
-        
-      
-      
-      
-      
-      
-      ../images/skaventide2.jpg);
+      url(../images/skaventide2.jpg);
     &:hover {
       background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
         url(../images/skaventide2.jpg);
