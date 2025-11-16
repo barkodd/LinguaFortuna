@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Inter:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Home: Lingua Fortuna</title>
+  </head>
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/lang.js"></script>
+  <body>
+    <header>
+      <div class="burger">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-label">
+          <img class="open" src="images/burger.png" alt="dropdown menu" />
+          <img
+            class="close"
+            src="images/close.png"
+            alt="dropdown menu - close"
+          />
+        </label>
+        <div class="burger-content">
+          <nav>
+            <ul>
+              <li><a class="underline" href=".">A propos</a></li>
+              <li><a class="underline" href=".">Nos projets</a></li>
+              <li>
+                <a
+                  class="underline"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeSkxN9FpLsFUJl8pkUwQE58PtbcFsohN4n9_Rallz5CTq8-g/viewform?fbclid=PAZXh0bgNhZW0CMTEAAadKXThTGYjZMythenSrmJlGu_RpN26agzaRB8m6qN5E7bDAPtUPs3fKcyqxyw_aem_fL9P8D4lEDoYwo3uHcqTKA"
+                  >Devenir membre</a
+                >
+              </li>
+              <li><a class="underline" href=".">Faire un don</a></li>
+              <li><a class="underline" href=".">Contact</a></li>
+              <li><a class="underline" href=".">Nos partenaires</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <section class="hero" id="hero">
+        <div class="hero-inner">
+          <div class="hero-logo">
+            <img src="../images/LF_logo.svg" alt="Lingua Fortuna logo" />
+            <div class="divider"></div>
+          </div>
+          <h1>
+            <span>LINGUA</span><br />
+            <span>FORTUNA</span>
+          </h1>
+        </div>
+      </section>
+      <section class="org-desc">
+        <p>
+          Lingua Fortuna est une organisation à but non lucratif qui promeut la
+          coopération culturelle et humanitaire entre la Belgique et l’Ukraine.
+        </p>
+      </section>
+    </header>
+
+    <main>
+      <div class="lang-popup">
+        <div class="lang-popup-inner">
+          <h2>Welcome, Bienvenue, Ласкаво просимо</h2>
+          <div class="lang-row">
+            <button
+              class="lang-buttons"
+              id="ukr"
+              aria-label="Українська"
+            ></button>
+            <button class="lang-buttons" id="eng" aria-label="English"></button>
+            <button class="lang-buttons" id="fr" aria-label="Français"></button>
+          </div>
+        </div>
+      </div>
+
+      <script src="/js/lang-test.js"></script>
+
+      <section class="org-about-us">
+        <p>
+          Lingua Fortuna a été fondée en 2018 grâce à l’amitié
+          belgo-ukrainienne, dans le but de populariser la langue française et
+          la culture belge auprès de la jeunesse ukrainienne. C’est à cette
+          période qu’a été organisé le premier camp d’été pour enfants en
+          Wallonie.
+        </p>
+        <span id="dots"></span>
+        <span id="more"
+          ><p>
+            Malgré les crises mondiales, la pandémie, l’invasion à grande
+            échelle de l’Ukraine et d’autres changements majeurs, notre
+            organisation continue de jouer un rôle actif dans la vie publique,
+            tout en ayant redéfini ses objectifs. Ainsi, avec le soutien du
+            peuple belge, Lingua Fortuna a aidé de nombreuses familles et jeunes
+            ukrainiens à évacuer vers la Belgique et à y trouver refuge.
+            Aujourd’hui, notre organisation œuvre pour renforcer la cohésion
+            sociale des Ukrainiens en Belgique et encourager leur engagement
+            citoyen, en créant de nouveaux projets publics à but non lucratif et
+            en poursuivant l’organisation de camps.
+          </p>
+          <p>
+            Depuis 2018, nous organisons des camps interculturels. De cette
+            manière, l’association vise à favoriser les échanges entre les
+            peuples, en offrant aux jeunes de Belgique et d’Ukraine
+            l’opportunité de se rencontrer dans un cadre naturel, afin de
+            découvrir d’autres cultures et de discuter de sujets tels que
+            l’écologie, le sexisme, l’alimentation saine, etc.
+          </p>
+          <p>
+            Pendant la crise sanitaire et la pandémie, qui ont restreint notre
+            liberté de déplacement, l’association a continué de travailler
+            conformément à ses objectifs, en organisant des rencontres en ligne
+            et en participant à divers projets sociaux. Ainsi, avec le Congrès
+            mondial des organisations de jeunesse ukrainiennes, Lingua Fortuna a
+            contribué à la collecte de fonds pour les hôpitaux en Ukraine,
+            notamment dans les régions touchées par la guerre.
+          </p>
+          <p>
+            Malheureusement, en 2022, alors que nous envisagions de reprendre
+            pleinement nos activités en présentiel, notre programme a de nouveau
+            été bouleversé par l’invasion russe et les attaques terroristes
+            contre le peuple ukrainien.
+          </p>
+          <p>
+            Aux côtés du peuple belge, Lingua Fortuna a fait tout son possible
+            pour évacuer de nombreux jeunes et leurs familles, leur offrant une
+            protection temporaire en Belgique ainsi que la possibilité de
+            poursuivre leur scolarité.
+          </p>
+          <p>
+            Depuis, Lingua Fortuna travaille à renforcer la cohésion sociale et
+            à promouvoir un engagement citoyen actif.
+          </p></span
+        >
+        <button onclick="myFunction()" id="readMore">En savoir plus</button>
+      </section>
+      <div class="articles">
+        <section class="top item-1">
+          <a href=".">
+            <img src="images/studentday.png" alt="" />
+            <p class="article-title">Student Day</p>
+            <p class="article-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+          </a>
+        </section>
+        <div class="bottom-container">
+          <section class="bottom item-2">
+            <a href=".">
+              <img src="images/winter.png" alt="" />
+              <p class="article-title">Camp d'hiver 2023</p>
+              <p class="article-desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing.
+              </p>
+            </a>
+          </section>
+          <section class="bottom item-3">
+            <a href=".">
+              <img src="images/summer.png" alt="" />
+              <p class="article-title">Camp d'été 2022</p>
+              <p class="article-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+              </p>
+            </a>
+          </section>
+        </div>
+      </div>
+      <div class="h2-home">
+        <h2>Témoignages</h2>
+      </div>
+      <div class="gallery-wrapper">
+        <section class="gallery">
+          <article class="gallery-item">
+            <img src="images/gal1.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta id
+              nulla eveniet maxime, voluptatibus fuga.
+            </p>
+          </article>
+          <article class="gallery-item">
+            <img src="images/gal2.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+              accusantium! Numquam repellat quod natus eum.
+            </p>
+          </article>
+
+          <article class="gallery-item">
+            <img src="images/gal3.png" alt="" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </article>
+          <article class="gallery-item">
+            <img src="images/gal4.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, esse.
+            </p>
+          </article>
+        </section>
+        <section class="contact">
+          <h3>Titre</h3>
+          <p>
+            Je sais pas quoi mettre ici, mais j'aime bien ce menu
+            complémentaire.
+          </p>
+          <div class="contact-image">
+            <img src="images/construction.png" alt="Under construction" />
+          </div>
+        </section>
+      </div>
+      <a href="index.html">
+        <div class="scroll-btn">
+          <div id="scroll-arrow"></div>
+        </div>
+      </a>
+    </main>
+
+    <footer>
+      <p>
+        Lingua Fortuna ©
+        <time datetime="2025-01-01">2025</time>
+      </p>
+    </footer>
+  </body>
+</html>

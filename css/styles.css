@@ -10,6 +10,76 @@
   font-family: "Glacial Indifference";
 }
 
+.lang-popup {
+  position: fixed;
+  inset: 0; /* shorthand for top:0;left:0;right:0;bottom:0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  pointer-events: auto; /* overlay allows pointer events, inner will take them */
+}
+
+.lang-popup-inner {
+  position: relative; /* not fixed — avoids extra stacking issues */
+  background: #0b5c86; /* visible for test */
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  z-index: 10000; /* make sure it's above everything else */
+  pointer-events: auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.lang-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.lang-buttons {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* local test fallback colors so you can see the buttons even if images missing */
+#ukr {
+  background-image: url("/images/ukraine.png");
+}
+
+#eng {
+  background-image: url("/images/united-kingdom.png");
+}
+
+#fr {
+  background-image: url("/images/france.png");
+}
+
+/* if image missing, show fallback background color so you can click */
+#ukr:empty {
+  background-color: #f6b267;
+}
+
+#eng:empty {
+  background-color: #7ac7ff;
+}
+
+#fr:empty {
+  background-color: #f28db0;
+}
+
 .hero {
   margin-top: 3rem;
   width: 100%;
