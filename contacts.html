@@ -10,7 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Contacts: Miniature Painting</title>
+    <title>Contacts: Lingua Fortuna</title>
+    <script src="scripts/lang.js"></script>
   </head>
   <body>
     <header>
@@ -27,95 +28,40 @@
         <div class="burger-content">
           <nav>
             <ul>
-              <li><a class="underline" href="index.html">Home</a></li>
-              <li><a class="underline" href="articles.html">Articles</a></li>
-              <li><a class="underline" href="contacts.html">Contacts</a></li>
-              <li><a class="underline" href="specs.html">Specifications</a></li>
+              <li>
+                <a class="underline" href="index.en.html">About us</a>
+              </li>
+              <li>
+                <a class="underline" href="articles.html">Our projects</a>
+              </li>
+              <li>
+                <a
+                  class="underline"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeSkxN9FpLsFUJl8pkUwQE58PtbcFsohN4n9_Rallz5CTq8-g/viewform?fbclid=PAZXh0bgNhZW0CMTEAAadKXThTGYjZMythenSrmJlGu_RpN26agzaRB8m6qN5E7bDAPtUPs3fKcyqxyw_aem_fL9P8D4lEDoYwo3uHcqTKA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Become a member
+                </a>
+              </li>
+              <li><a class="underline" href=".">Make a donation</a></li>
+              <li><a class="underline" href="contacts.html">Contact</a></li>
+              <li><a class="underline" href=".">Our partners</a></li>
+              <li class="lang-dropdown">
+                <button id="lang-toggle"></button>
+                <div class="lang-menu">
+                  <button class="change-lang" data-lang="uk"></button>
+                  <button class="change-lang" data-lang="en"></button>
+                  <button class="change-lang" data-lang="fr"></button>
+                </div>
+              </li>
             </ul>
           </nav>
         </div>
       </div>
-
-      <section class="hero">
-        <div class="hero-inner">
-          <h1>Miniature Painting</h1>
-        </div>
-      </section>
     </header>
     <main>
-      <section class="page-contact">
-        <h2>Contact us</h2>
-        <p>
-          If you wish to get in touch with our team, leave your message below
-          and our kind cave trolls will be let out of their cages to carefully
-          rewrite your message on the parchment paper, and deliver it to us. Oh,
-          and you can pick a troll who'll be responsible for your message.
-        </p>
-
-        <form>
-          <label for="fname">First name:</label><br />
-          <input
-            class="string-input"
-            type="text"
-            id="fname"
-            name="fname"
-            placeholder="John"
-            required
-          /><br />
-          <label for="lname">Last name:</label><br />
-          <input
-            class="string-input"
-            type="text"
-            id="lname"
-            name="lname"
-            placeholder="Doe"
-            required
-          /><br />
-          <label for="email">Email:</label><br />
-          <input
-            class="string-input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="john.doe@example.com"
-            required
-          /><br />
-          <label for="tel">Phone number:</label><br />
-          <input
-            class="string-input"
-            type="tel"
-            id="tel"
-            name="phone-number"
-            placeholder="123-456-7890"
-            required
-          /><br />
-          <label for="message">Your message:</label><br />
-          <textarea name="message" id="message" required></textarea>
-          <br />
-          <fieldset required>
-            <legend>Pick a troll:</legend>
-            <input
-              type="radio"
-              id="Borloth"
-              name="pick_a_troll"
-              value="Borloth"
-              required
-            />
-            <label for="Borloth">Borloth</label><br />
-            <input type="radio" id="Ubnog" name="pick_a_troll" value="Ubnog" />
-            <label for="Ubnog">Ubnog</label><br />
-            <input
-              type="radio"
-              id="Durgurk"
-              name="pick_a_troll"
-              value="Durgurk"
-            />
-            <label for="Durgurk">Durgurk</label>
-          </fieldset>
-          <br />
-          <input class="button" type="submit" value="Send message" />
-        </form>
-      </section>
+      <section class="page-contact"></section>
       <a href="contacts.html">
         <div class="scroll-btn">
           <div id="scroll-arrow"></div>
@@ -124,12 +70,8 @@
     </main>
     <footer>
       <p>
-        This website and all of its contents are ©
-        <time datetime="2024-01-01">2024</time> Miniature Painting • This
-        website is completely unofficial and in no way endorsed by Games
-        Workshop Limited • Any trademarks are used without permission • All
-        rights reserved • Please do not use our pictures or content without
-        permission!
+        Lingua Fortuna ©
+        <time datetime="2025-01-01">2025</time>
       </p>
     </footer>
   </body>
