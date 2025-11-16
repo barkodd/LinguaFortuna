@@ -13,7 +13,7 @@
     <title>Home: Lingua Fortuna</title>
   </head>
   <script src="/scripts/script.js"></script>
-  <script src="/scripts/lang.js"></script>
+
   <body>
     <header>
       <div class="burger">
@@ -41,6 +41,14 @@
               <li><a class="underline" href=".">Faire un don</a></li>
               <li><a class="underline" href=".">Contact</a></li>
               <li><a class="underline" href=".">Nos partenaires</a></li>
+              <li class="lang-dropdown">
+                <button id="lang-toggle"></button>
+                <div class="lang-menu">
+                  <button class="change-lang" data-lang="uk"></button>
+                  <button class="change-lang" data-lang="en"></button>
+                  <button class="change-lang" data-lang="fr"></button>
+                </div>
+              </li>
             </ul>
           </nav>
         </div>
@@ -71,18 +79,13 @@
         <div class="lang-popup-inner">
           <h2>Welcome, Bienvenue, Ласкаво просимо</h2>
           <div class="lang-row">
-            <button
-              class="lang-buttons"
-              id="ukr"
-              aria-label="Українська"
-            ></button>
-            <button class="lang-buttons" id="eng" aria-label="English"></button>
-            <button class="lang-buttons" id="fr" aria-label="Français"></button>
+            <button class="lang-buttons" id="ukr" aria-label="Укр"></button>
+            <button class="lang-buttons" id="eng" aria-label="Eng"></button>
+            <button class="lang-buttons" id="fr" aria-label="Fr"></button>
           </div>
         </div>
       </div>
-
-      <script src="/js/lang-test.js"></script>
+      <script src="scripts/lang.js"></script>
 
       <section class="org-about-us">
         <p>

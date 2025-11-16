@@ -303,34 +303,102 @@ footer {
     top: 0px !important;
   }
   .burger-content {
-    align-items: center;
     display: flex !important;
+    justify-content: center;
+    align-items: center;
     padding: 1rem !important;
     border-radius: 0 !important;
     box-shadow: none !important;
     left: 0 !important;
     width: 100%;
-    justify-content: center;
   }
   .burger-content ul {
     margin: 0;
     padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
   }
   .burger-content li {
-    display: inline;
+    display: flex;
+    align-items: center;
+    position: relative;
     margin: 0 !important;
+    /* --------- Language dropdown integration --------- */
   }
   .burger-content li a {
-    display: inline !important;
-    margin-bottom: 0 !important;
-    padding: 0.5rem !important;
-    border-width: 0.15rem;
+    display: inline-block !important;
+    margin: 0;
+    padding: 0.5rem;
     color: inherit !important;
-    margin: 1rem;
+    text-decoration: none;
+    border-width: 0.15rem;
+    border-color: transparent;
+    border-bottom-style: solid;
   }
   .burger-content li a:hover {
     border-bottom-style: solid !important;
     border-color: #000000 !important;
+  }
+  .burger-content li.lang-dropdown {
+    position: relative;
+  }
+  .burger-content li.lang-dropdown #lang-toggle {
+    width: 30px;
+    height: 30px;
+    background-image: url("/images/language.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s;
+  }
+  .burger-content li.lang-dropdown #lang-toggle:hover {
+    transform: scale(1.1);
+  }
+  .burger-content li.lang-dropdown .lang-menu {
+    position: absolute;
+    left: 100%;
+    transform: translateY(-50%) translateX(-10px);
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    background-color: transparent;
+    padding: 0.5rem;
+    z-index: 1000;
+    min-width: 120px;
+  }
+  .burger-content li.lang-dropdown .lang-menu.hidden {
+    display: none;
+  }
+  .burger-content li.lang-dropdown .lang-menu button.change-lang {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s, border 0.2s;
+  }
+  .burger-content li.lang-dropdown .lang-menu button.change-lang:hover {
+    transform: scale(1.1);
+    border: 2px solid white;
+  }
+  .burger-content li.lang-dropdown .lang-menu button.change-lang[data-lang=uk] {
+    background-image: url("/images/ukraine.png");
+  }
+  .burger-content li.lang-dropdown .lang-menu button.change-lang[data-lang=en] {
+    background-image: url("/images/united-kingdom.png");
+  }
+  .burger-content li.lang-dropdown .lang-menu button.change-lang[data-lang=fr] {
+    background-image: url("/images/france.png");
   }
 }
 .articles {
