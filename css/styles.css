@@ -290,6 +290,50 @@ footer {
   border-bottom-style: solid;
   border-width: 0.05rem;
 }
+.burger input[type=checkbox]:checked ~ .burger-content li.lang-dropdown {
+  margin-top: 1rem;
+}
+.burger input[type=checkbox]:checked ~ .burger-content li.lang-dropdown .lang-menu {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  position: static;
+  padding: 0;
+  box-shadow: none;
+}
+.burger input[type=checkbox]:checked ~ .burger-content li.lang-dropdown .lang-menu button {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+.burger input[type=checkbox]:checked ~ .burger-content li.lang-dropdown .lang-menu button.change-lang {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+}
+.burger input[type=checkbox]:checked ~ .burger-content li.lang-dropdown .lang-menu button.change-lang:hover {
+  transform: scale(1.1);
+  border: 2px solid white;
+}
+.burger input[type=checkbox]:checked ~ .burger-content li.lang-dropdown .lang-menu button.change-lang[data-lang=uk] {
+  background-image: url("/images/ukraine.png");
+}
+.burger input[type=checkbox]:checked ~ .burger-content li.lang-dropdown .lang-menu button.change-lang[data-lang=en] {
+  background-image: url("/images/united-kingdom.png");
+}
+.burger input[type=checkbox]:checked ~ .burger-content li.lang-dropdown .lang-menu button.change-lang[data-lang=fr] {
+  background-image: url("/images/france.png");
+}
+.burger input[type=checkbox]:checked ~ .burger-content li.lang-dropdown #lang-toggle {
+  display: none;
+}
 
 @media screen and (min-width: 900px) {
   .org-desc {
