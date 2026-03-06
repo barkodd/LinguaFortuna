@@ -956,9 +956,10 @@ h2 {
 
 #partners {
   margin-top: 0;
-  width: 50rem;
+  width: 95%;
 }
 #partners .gallery {
+  width: 100%;
   -moz-column-count: 1;
        column-count: 1;
   -moz-column-gap: 2rem;

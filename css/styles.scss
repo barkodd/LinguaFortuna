@@ -1031,8 +1031,10 @@ h2 {
 
 #partners {
   margin-top: 0;
-  width: 50rem;
+  width: 95%;
+  
   .gallery {
+    width: 100%;
     column-count: 1;
     column-gap: 2rem;
     @media (min-width: 768px) {
