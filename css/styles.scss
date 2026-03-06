@@ -28,6 +28,12 @@ html[lang="uk"] {
   #hero {
     font-family: "Glacial Indifference";
   }
+  #hero-ukr {
+    font-family: "Montserrat", sans-serif;
+    h1{
+      font-weight: 500;
+    }
+  }
 }
 .lang-popup {
   position: fixed;
@@ -168,7 +174,9 @@ html[lang="uk"] {
 #more {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.6s ease, opacity 0.6s ease;
+  transition:
+    max-height 0.6s ease,
+    opacity 0.6s ease;
   opacity: 0;
   display: block; /* важливо, щоб можна було анімувати */
 }
@@ -328,7 +336,9 @@ footer {
             border-radius: 50%;
             border: 2px solid transparent;
             cursor: pointer;
-            transition: transform 0.2s, border 0.2s;
+            transition:
+              transform 0.2s,
+              border 0.2s;
 
             &:hover {
               transform: scale(1.1);
@@ -360,11 +370,11 @@ footer {
     font-size: 2rem;
     padding-bottom: 4rem;
     padding-top: 5rem;
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
 
   .hero {
-    margin-top: 8rem;
+    margin-top: 2rem;
     height: 30vh;
 
     .hero-logo {
@@ -373,7 +383,7 @@ footer {
       }
 
       .divider {
-        width: 0.125rem;
+        width: 0.325rem;
         height: 14rem;
       }
     }
@@ -485,7 +495,9 @@ footer {
             border-radius: 50%;
             border: 2px solid transparent;
             cursor: pointer;
-            transition: transform 0.2s, border 0.2s;
+            transition:
+              transform 0.2s,
+              border 0.2s;
 
             &:hover {
               transform: scale(1.1);
@@ -507,7 +519,7 @@ footer {
     }
   }
 }
-.article-intro{
+.article-intro {
   max-width: 1200px;
   margin: auto;
   font-size: 1.2rem;
@@ -577,7 +589,7 @@ footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
     border-bottom-style: solid;
-    
+
     border-width: 0.2rem;
     border-color: $border-color;
 
@@ -742,7 +754,8 @@ footer {
 }
 //different images for banners on different articles
 .skaventide {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     url(../images/skavenhero2.jpg);
 }
 //contact form visible at homepage on desktop, sticks to the screen
@@ -1015,6 +1028,28 @@ h2 {
     background-image: url(../images/arrow-hover.png);
   }
 }
+
+#partners {
+  margin-top: 0;
+  width: 50rem;
+  .gallery {
+    gap: 2rem;
+    column-count: 2;
+    column-gap: 2rem;
+    .gallery-item {
+      height: fit-content;
+      break-inside: avoid;
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+
+
 // doen't work with scroll to top button returning to pagename.html. If add something like "div class top" to the top of each page and link the button to it,
 // results in a new URL after pressing the button (it's a link but calling button for simplicity), which leads to returning to previous page not working as expected
 // Say, you press the btn to scroll to the top of the page, swipe on your phone to return to the previous page, you get returned to the position where you were before pressing the button.

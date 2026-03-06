@@ -23,6 +23,12 @@ html[lang=uk] body {
 html[lang=uk] #hero {
   font-family: "Glacial Indifference";
 }
+html[lang=uk] #hero-ukr {
+  font-family: "Montserrat", sans-serif;
+}
+html[lang=uk] #hero-ukr h1 {
+  font-weight: 500;
+}
 
 .lang-popup {
   position: fixed;
@@ -343,17 +349,17 @@ footer {
     font-size: 2rem;
     padding-bottom: 4rem;
     padding-top: 5rem;
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
   .hero {
-    margin-top: 8rem;
+    margin-top: 2rem;
     height: 30vh;
   }
   .hero .hero-logo img {
     width: 16rem;
   }
   .hero .hero-logo .divider {
-    width: 0.125rem;
+    width: 0.325rem;
     height: 14rem;
   }
   .hero h1 {
@@ -946,4 +952,28 @@ h2 {
 #scroll-arrow:hover {
   color: black;
   background-image: url(../images/arrow-hover.png);
+}
+
+#partners {
+  margin-top: 0;
+  width: 50rem;
+}
+#partners .gallery {
+  gap: 2rem;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+#partners .gallery .gallery-item {
+  height: -moz-fit-content;
+  height: fit-content;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  #partners .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
 }/*# sourceMappingURL=styles.css.map */
