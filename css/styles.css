@@ -959,11 +959,16 @@ h2 {
   width: 50rem;
 }
 #partners .gallery {
-  gap: 2rem;
-  -moz-column-count: 2;
-       column-count: 2;
+  -moz-column-count: 1;
+       column-count: 1;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+}
+@media (min-width: 768px) {
+  #partners .gallery {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
 }
 #partners .gallery .gallery-item {
   height: -moz-fit-content;
@@ -971,9 +976,4 @@ h2 {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
   margin-bottom: 2rem;
-}
-@media (min-width: 768px) {
-  #partners .gallery {
-    grid-template-columns: 1fr 1fr;
-  }
 }/*# sourceMappingURL=styles.css.map */

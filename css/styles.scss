@@ -30,7 +30,7 @@ html[lang="uk"] {
   }
   #hero-ukr {
     font-family: "Montserrat", sans-serif;
-    h1{
+    h1 {
       font-weight: 500;
     }
   }
@@ -1033,22 +1033,18 @@ h2 {
   margin-top: 0;
   width: 50rem;
   .gallery {
-    gap: 2rem;
-    column-count: 2;
+    column-count: 1;
     column-gap: 2rem;
+    @media (min-width: 768px) {
+      column-count: 2;
+    }
     .gallery-item {
       height: fit-content;
       break-inside: avoid;
       margin-bottom: 2rem;
     }
-
-    @media (min-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-    }
   }
 }
-
-
 
 // doen't work with scroll to top button returning to pagename.html. If add something like "div class top" to the top of each page and link the button to it,
 // results in a new URL after pressing the button (it's a link but calling button for simplicity), which leads to returning to previous page not working as expected
