@@ -30,8 +30,7 @@ html[lang=uk] #hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   background-color: rgba(0, 0, 0, 0.15);
   z-index: 9999;
   pointer-events: auto; /* overlay allows pointer events, inner will take them */
@@ -177,7 +176,11 @@ html[lang=uk] #hero {
 .org-about-us {
   margin: auto;
   margin-top: 2rem;
+  padding-bottom: 1rem;
   max-width: 1200px;
+  border-bottom-style: solid;
+  border-width: 0.2rem;
+  border-color: rgb(219, 219, 219);
 }
 .org-about-us p {
   margin: 0.5rem;
@@ -384,7 +387,6 @@ footer {
     align-items: center;
     position: relative;
     margin: 0 !important;
-    /* --------- Language dropdown integration --------- */
   }
   .burger-content li a {
     position: relative;
@@ -406,6 +408,9 @@ footer {
   }
   .burger-content li a:hover::after {
     width: 100%;
+  }
+  .burger-content li {
+    /* --------- Language dropdown integration --------- */
   }
   .burger-content li.lang-dropdown {
     position: relative;
@@ -467,6 +472,12 @@ footer {
     background-image: url("/images/france.png");
   }
 }
+.article-intro {
+  max-width: 1200px;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
 .articles {
   display: flex;
   flex-direction: column;
@@ -667,6 +678,30 @@ footer {
   padding-top: 0.5rem;
 }
 
+.image-heading {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-position: center;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 90%;
+}
+.image-heading h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 750;
+}
+
+.skaventide {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0)), url(../images/skavenhero2.jpg);
+}
+
 @media screen and (min-width: 900px) {
   .contact {
     position: sticky !important;
@@ -694,6 +729,179 @@ footer {
     width: 100%;
   }
 }
+.article-wrapper {
+  background-color: rgb(242, 242, 242);
+  width: 100%;
+  margin-top: 1rem;
+}
+.article-wrapper .article-main .grid-container {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0.5rem;
+  row-gap: 1rem;
+  margin-top: 1rem;
+}
+.article-wrapper .article-main .grid-container img {
+  width: 100%;
+}
+.article-wrapper .article-main .item1 {
+  grid-area: 1/1/1/1;
+}
+.article-wrapper .article-main .item2 {
+  grid-area: 2/1/2/1;
+}
+.article-wrapper .article-main .item3 {
+  grid-area: 3/1/3/1;
+}
+.article-wrapper .article-main ul {
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.article-wrapper .article-main figure {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #3a3a3a;
+}
+.article-wrapper .article-main figure img {
+  width: 95%;
+}
+@media screen and (min-width: 900px) {
+  .article-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 3rem;
+  }
+  .article-wrapper .article-intro {
+    width: 40rem !important;
+  }
+  .article-wrapper h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    font-size: 2rem !important;
+  }
+  .article-wrapper .article-main .grid-container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .article-wrapper .article-main .item1 {
+    grid-area: 1/1/2/2;
+  }
+  .article-wrapper .article-main .item2 {
+    grid-area: 1/2/2/3;
+  }
+  .article-wrapper .article-main .item3 {
+    grid-area: 2/1/3/3;
+  }
+  .article-wrapper .article-main {
+    width: 40vw;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .article-wrapper .article-main figure img {
+    width: 100%;
+  }
+}
+.article-wrapper h2 {
+  font-size: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: 550;
+}
+.article-wrapper .article-intro {
+  font-size: 1.3rem;
+  font-weight: 500;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 0.2rem;
+  border-color: rgb(219, 219, 219);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.article-wrapper .part-heading {
+  scroll-margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 650;
+  padding-top: 1rem;
+}
+.article-wrapper .guide-step {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  padding-bottom: 1rem;
+}
+.article-wrapper .guide-step img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.article-wrapper .guide-step:last-child {
+  border-width: 0.2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .article-wrapper .guide-step {
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0;
+    padding-right: 1rem;
+  }
+  .article-wrapper .guide-step p {
+    margin: 0 auto;
+    margin-left: 1rem;
+  }
+  .article-wrapper .guide-step img {
+    height: 65%;
+    width: 65%;
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+}
+.article-wrapper img {
+  border-radius: 0.5rem;
+}
+.article-wrapper p {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.image-heading {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-position: center;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 90%;
+}
+.image-heading h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 750;
+}
+
 h2 {
   margin: auto;
   margin-top: 1rem;

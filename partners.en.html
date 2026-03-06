@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,9 +10,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Projects: Lingua Fortuna</title>
-    <script src="scripts/lang.js"></script>
+    <title>Partners: Lingua Fortuna</title>
   </head>
+  <script src="/scripts/script.js"></script>
+
   <body>
     <header>
       <div class="burger">
@@ -32,12 +33,12 @@
                 <a class="underline" href="index.en.html">About us</a>
               </li>
               <li>
-                <a class="underline" href="articles.html">Our projects</a>
+                <a class="underline" href="articles.en.html">Our projects</a>
               </li>
               <li>
                 <a
                   class="underline"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeSkxN9FpLsFUJl8pkUwQE58PtbcFsohN4n9_Rallz5CTq8-g/viewform?fbclid=PAZXh0bgNhZW0CMTEAAadKXThTGYjZMythenSrmJlGu_RpN26agzaRB8m6qN5E7bDAPtUPs3fKcyqxyw_aem_fL9P8D4lEDoYwo3uHcqTKA"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScnUZzEg2S54Q8qZ6dEuFbiKI2GFWOXCQqE6sMYbgZlcILkAw/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -46,7 +47,9 @@
               </li>
               <li><a class="underline" href=".">Make a donation</a></li>
               <li><a class="underline" href="contacts.html">Contact</a></li>
-              <li><a class="underline" href=".">Our partners</a></li>
+              <li>
+                <a class="underline" href="partners.en.html">Our partners</a>
+              </li>
               <li class="lang-dropdown">
                 <button id="lang-toggle"></button>
                 <div class="lang-menu">
@@ -59,13 +62,34 @@
           </nav>
         </div>
       </div>
+
+      <section class="hero" id="hero">
+        <div class="hero-inner">
+          <div class="hero-logo">
+            <img src="../images/LF_logo.svg" alt="Lingua Fortuna logo" />
+            <div class="divider"></div>
+          </div>
+          <h1>
+            <span>LINGUA</span><br />
+            <span>FORTUNA</span>
+          </h1>
+        </div>
+      </section>
     </header>
-    <main></main>
-    <a href="articles.html">
-      <div class="scroll-btn">
-        <div id="scroll-arrow"></div>
+
+    <main>
+      <div class="lang-popup">
+        <div class="lang-popup-inner">
+          <h2>Welcome, Bienvenue, Ласкаво просимо</h2>
+          <div class="lang-row">
+            <button class="lang-buttons" id="ukr" aria-label="Укр"></button>
+            <button class="lang-buttons" id="eng" aria-label="Eng"></button>
+            <button class="lang-buttons" id="fr" aria-label="Fr"></button>
+          </div>
+        </div>
       </div>
-    </a>
+      <script src="scripts/lang.js"></script>
+    </main>
     <footer>
       <p>
         Lingua Fortuna ©

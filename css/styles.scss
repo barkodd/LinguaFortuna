@@ -180,7 +180,11 @@ html[lang="uk"] {
 .org-about-us {
   margin: auto;
   margin-top: 2rem;
+  padding-bottom: 1rem;
   max-width: 1200px;
+  border-bottom-style: solid;
+  border-width: 0.2rem;
+  border-color: $border-color;
 
   p {
     margin: 0.5rem;
@@ -503,7 +507,11 @@ footer {
     }
   }
 }
-
+.article-intro{
+  max-width: 1200px;
+  margin: auto;
+  font-size: 1.2rem;
+}
 // 3 articles at the home page
 .articles {
   display: flex;
@@ -569,6 +577,7 @@ footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
     border-bottom-style: solid;
+    
     border-width: 0.2rem;
     border-color: $border-color;
 
@@ -710,6 +719,32 @@ footer {
     padding-top: 0.5rem;
   }
 }
+
+.image-heading {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-position: center;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 90%;
+
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 750;
+  }
+}
+//different images for banners on different articles
+.skaventide {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+    url(../images/skavenhero2.jpg);
+}
 //contact form visible at homepage on desktop, sticks to the screen
 @media screen and (min-width: 900px) {
   .contact {
@@ -742,7 +777,197 @@ footer {
     }
   }
 }
+.article-wrapper {
+  background-color: $background-color;
+  width: 100%;
+  margin-top: 1rem;
 
+  // styling for the main part of the article, below the heading and short description
+  .article-main {
+    .grid-container {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 0.5rem;
+      row-gap: 1rem;
+      margin-top: 1rem;
+      img {
+        width: 100%;
+      }
+    }
+
+    .item1 {
+      grid-area: 1 / 1 / 1 / 1;
+    }
+
+    .item2 {
+      grid-area: 2 / 1 / 2 / 1;
+    }
+
+    .item3 {
+      grid-area: 3 / 1 / 3 / 1;
+    }
+    ul {
+      margin-left: 3rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+    figure {
+      margin-top: 0.5rem;
+      text-align: center;
+      color: #3a3a3a;
+      img {
+        width: 95%;
+      }
+    }
+  }
+  //desktop styling
+  @media screen and (min-width: 900px) {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 3rem;
+
+    .article-intro {
+      width: 40rem !important;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem !important;
+      font-size: 2rem !important;
+    }
+    .article-main {
+      .grid-container {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+      }
+
+      .item1 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      .item2 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+
+      .item3 {
+        grid-area: 2 / 1 / 3 / 3;
+      }
+      width: 40vw;
+      max-width: 700px;
+      margin: 0 auto;
+
+      figure {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+
+    font-weight: 550;
+  }
+  .article-intro {
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 0.2rem;
+    border-color: $border-color;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .part-heading {
+    scroll-margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 650;
+    padding-top: 1rem;
+  }
+  // styling for a step of a painting guide, with image and text below
+  .guide-step {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+    img {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:last-child {
+      border-width: 0.2rem;
+      margin-bottom: 2rem;
+    }
+    //tablet/desktop styling for guide steps, text to the right of the image
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      padding-bottom: 0;
+      padding-right: 1rem;
+      p {
+        margin: 0 auto;
+        margin-left: 1rem;
+      }
+
+      img {
+        height: 65%;
+        width: 65%;
+        border-radius: 0;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+      }
+    }
+  }
+
+  img {
+    border-radius: 0.5rem;
+  }
+  p {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}
+//.image-heading - hero for articles. different class because of different styling from the .hero
+.image-heading {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-position: center;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 90%;
+
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 750;
+  }
+}
 h2 {
   margin: auto;
   margin-top: 1rem;
