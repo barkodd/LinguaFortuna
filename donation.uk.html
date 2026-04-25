@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Inter:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Home: Lingua Fortuna</title>
+  </head>
+  <script src="/scripts/script.js"></script>
+
+  <body>
+    <header>
+      <div class="burger">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-label">
+          <img class="open" src="images/burger.png" alt="dropdown menu" />
+          <img
+            class="close"
+            src="images/close.png"
+            alt="dropdown menu - close"
+          />
+        </label>
+        <div class="burger-content">
+          <nav>
+            <ul>
+              <li>
+                <a class="underline" href="index.uk.html">Про нас</a>
+              </li>
+              <li>
+                <a class="underline" href="articles.uk.html">Наші проєкти</a>
+              </li>
+              <li>
+                <a
+                  class="underline"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSexVxDhGyr43M0asELssXP_shkfsGxGTRNbuXBNtcrmLwUtVw/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Доєднатись</a
+                >
+              </li>
+              <li>
+                <a class="underline" href="donation.uk.html">Зробити донат</a>
+              </li>
+
+              <li class="social-links">
+                <a
+                  href="https://www.facebook.com/linguafortuna/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="images/facebook.png" alt="Facebook" />
+                </a>
+                <a
+                  href="https://www.instagram.com/linguafortuna/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="images/instagram.png" alt="Instagram" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/lingua-fortuna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="images/linkedin.png" alt="LinkedIn" />
+                </a>
+              </li>
+              <li class="lang-dropdown">
+                <button id="lang-toggle"></button>
+                <div class="lang-menu">
+                  <button class="change-lang" data-lang="uk"></button>
+                  <button class="change-lang" data-lang="en"></button>
+                  <button class="change-lang" data-lang="fr"></button>
+                </div>
+                <script src="scripts/lang.js"></script>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <section class="hero" id="hero">
+        <div class="hero-inner">
+          <div class="hero-logo">
+            <img src="../images/LF_logo.svg" alt="Lingua Fortuna logo" />
+            <div class="divider"></div>
+          </div>
+          <h1>
+            <span>LINGUA</span><br />
+            <span>FORTUNA</span>
+          </h1>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="donation-wrapper">
+        <p>
+          Ви можете підтримати нас за рахунок донату на цей рахунок, з
+          комунікацією XYZ-XYZ
+        </p>
+        <p>BExxxxxxxxxxx</p>
+        <p>Communication: XYZ-XYZ</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="donation">
+        <p>
+          Lingua Fortuna ©
+          <time datetime="2025-01-01">2025</time>
+        </p>
+        <p>BExxxxxxxxxxx</p>
+        <p>Communication: Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <li class="social-links">
+        <a
+          href="https://www.facebook.com/linguafortuna/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/facebook.png" alt="Facebook" />
+        </a>
+        <a
+          href="https://www.instagram.com/linguafortuna/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/instagram.png" alt="Instagram" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/lingua-fortuna"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/linkedin.png" alt="LinkedIn" />
+        </a>
+      </li>
+    </footer>
+  </body>
+</html>

@@ -706,6 +706,20 @@ footer {
     }
   }
 }
+.donation-wrapper{
+  padding: 2rem;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  height: fit-content;
+  background-color: #f6feff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 20%;
+  font-size: 2rem;
+
+}
 //frontpage gallery
 .gallery-wrapper {
   margin: 0 auto;
