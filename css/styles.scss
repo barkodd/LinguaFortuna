@@ -35,6 +35,41 @@ html[lang="uk"] {
     }
   }
 }
+.social-links {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+
+  list-style: none;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    @media screen and (max-width: 900px) {
+      margin-top: 2rem;
+    }
+  }
+
+  img {
+    display: block;
+    width: 26px;
+    height: 26px;
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+  }
+}
+
 .lang-popup {
   position: fixed;
   inset: 0; /* shorthand for top:0;left:0;right:0;bottom:0; */
@@ -116,6 +151,10 @@ html[lang="uk"] {
     align-items: center;
     justify-content: center;
     gap: 2rem; // space between logo and text
+    @media screen and (max-width: 900px) {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
   }
 
   .hero-logo {
@@ -227,6 +266,17 @@ footer {
   padding: 1rem;
   background-color: $header-color;
   font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+.donation {
+
+  p {
+    display: flex;
+    flex-direction: column;
+  }
 }
 // burger dropdown menu for mobile
 .burger {
@@ -285,9 +335,8 @@ footer {
         margin-bottom: 1rem;
         text-decoration: none;
         text-align: center;
-        &:last-child {
-          margin-bottom: 0;
-        }
+        margin-bottom: 0;
+      
       }
     }
   }
@@ -324,8 +373,8 @@ footer {
 
           button {
             display: flex;
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
           }
           button.change-lang {
             width: 30px;
@@ -626,7 +675,7 @@ footer {
     color: $lf-med-blue;
   }
 }
-//latest painted models h2 on the home page
+
 .h2-home {
   h2 {
     margin-top: 2rem;
@@ -635,7 +684,7 @@ footer {
     color: $lf-med-blue;
   }
 }
-//latest painted models image gallery and contact form(desktop only) wrapper
+//frontpage gallery
 .gallery-wrapper {
   margin: 0 auto;
   margin-top: 2rem;
@@ -672,6 +721,7 @@ footer {
     margin-top: 2rem !important;
   }
 }
+
 //.page-contact - contact form on a separate page, .contact - contact form at homepage
 .page-contact,
 .contact {
@@ -764,9 +814,16 @@ footer {
     position: sticky !important;
     top: 5rem;
     padding-bottom: 24rem;
+    display: flex;
+    width: 20em;
+    height: 60rem;
+    z-index: -1;
     .contact-image {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); /* 👈 2 columns */
+      gap: 1rem; /* spacing between images */
       img {
-        width: 20rem;
+        width: 100%;
       }
     }
   }
@@ -1032,7 +1089,7 @@ h2 {
 #partners {
   margin-top: 0;
   width: 95%;
-  
+
   .gallery {
     width: 100%;
     column-count: 1;

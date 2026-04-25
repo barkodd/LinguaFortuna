@@ -30,6 +30,39 @@ html[lang=uk] #hero-ukr h1 {
   font-weight: 500;
 }
 
+.social-links {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  list-style: none;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+}
+@media screen and (max-width: 900px) {
+  .social-links a {
+    margin-top: 2rem;
+  }
+}
+.social-links img {
+  display: block;
+  width: 26px;
+  height: 26px;
+}
+.social-links img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
 .lang-popup {
   position: fixed;
   inset: 0; /* shorthand for top:0;left:0;right:0;bottom:0; */
@@ -114,6 +147,12 @@ html[lang=uk] #hero-ukr h1 {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+@media screen and (max-width: 900px) {
+  .hero .hero-inner {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
 }
 .hero .hero-logo {
   display: flex;
@@ -221,6 +260,15 @@ footer {
   padding: 1rem;
   background-color: #f6feff;
   font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.donation p {
+  display: flex;
+  flex-direction: column;
 }
 
 .burger {
@@ -276,8 +324,6 @@ footer {
   margin-bottom: 1rem;
   text-decoration: none;
   text-align: center;
-}
-.burger .burger-content li a:last-child {
   margin-bottom: 0;
 }
 .burger input[type=checkbox]:checked ~ .burger-content {
@@ -313,8 +359,8 @@ footer {
 }
 .burger input[type=checkbox]:checked ~ .burger-content li.lang-dropdown .lang-menu button {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .burger input[type=checkbox]:checked ~ .burger-content li.lang-dropdown .lang-menu button.change-lang {
   width: 30px;
@@ -713,9 +759,18 @@ footer {
     position: sticky !important;
     top: 5rem;
     padding-bottom: 24rem;
+    display: flex;
+    width: 20em;
+    height: 60rem;
+    z-index: -1;
+  }
+  .contact .contact-image {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 👈 2 columns */
+    gap: 1rem; /* spacing between images */
   }
   .contact .contact-image img {
-    width: 20rem;
+    width: 100%;
   }
   .contact,
   .page-contact {
