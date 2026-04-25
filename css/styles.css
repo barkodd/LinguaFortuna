@@ -654,7 +654,7 @@ footer .social-links {
 }
 
 .donation-wrapper {
-  padding: 3rem;
+  padding: 4rem;
   margin-left: 20vw;
   margin-right: 20vw;
   height: -moz-fit-content;
@@ -666,6 +666,14 @@ footer .social-links {
   flex-direction: column;
   margin-bottom: 20%;
   font-size: 2rem;
+}
+@media screen and (max-width: 900px) {
+  .donation-wrapper {
+    font-size: 1.2rem;
+    padding: 3rem;
+    margin: 2rem;
+    margin-bottom: 100vw;
+  }
 }
 
 .gallery-wrapper {
