@@ -265,6 +265,10 @@ footer {
   justify-content: center;
   gap: 2rem;
 }
+footer .social-links {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
 
 .donation p {
   display: flex;
@@ -342,7 +346,6 @@ footer {
 }
 .burger input[type=checkbox]:checked ~ .burger-content li a {
   color: black;
-  border-bottom-style: solid;
   border-width: 0.05rem;
 }
 .burger input[type=checkbox]:checked ~ .burger-content li.lang-dropdown {
@@ -629,6 +632,25 @@ footer {
   font-size: 3rem;
   font-weight: bold;
   color: #2a859d;
+}
+
+.mobile-partner-wrapper {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .mobile-partner-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .mobile-partner-wrapper .mobile-partner-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .mobile-partner-wrapper .mobile-partner-gallery img {
+    width: 2rem;
+  }
 }
 
 .gallery-wrapper {

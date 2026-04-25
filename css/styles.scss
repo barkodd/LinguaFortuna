@@ -270,9 +270,15 @@ footer {
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
+  @media screen and (max-width: 900px) {
+  }
+  .social-links {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
 }
-.donation {
 
+.donation {
   p {
     display: flex;
     flex-direction: column;
@@ -336,7 +342,6 @@ footer {
         text-decoration: none;
         text-align: center;
         margin-bottom: 0;
-      
       }
     }
   }
@@ -356,7 +361,7 @@ footer {
 
       a {
         color: black;
-        border-bottom-style: solid;
+
         border-width: 0.05rem;
       }
       &.lang-dropdown {
@@ -682,6 +687,23 @@ footer {
     font-size: 3rem;
     font-weight: bold;
     color: $lf-med-blue;
+  }
+}
+.mobile-partner-wrapper {
+  display: none;
+  @media screen and (max-width: 900px) {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    .mobile-partner-gallery {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      img {
+        width: 2rem;
+        
+      }
+    }
   }
 }
 //frontpage gallery
