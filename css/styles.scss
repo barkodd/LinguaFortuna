@@ -776,7 +776,7 @@ footer {
   .partners-image img {
     flex: 0 0 auto;
 
-    height: 90px; // 👈 bigger logos
+    height: 15vh; 
     width: auto;
 
     object-fit: contain;
@@ -1298,8 +1298,6 @@ $background-color: rgb(242, 242, 242);
 .team-gallery-item p {
   line-height: 1.5;
   font-weight: 500;
-  
- 
 }
 
 @media (max-width: 768px) {
