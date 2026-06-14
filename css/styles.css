@@ -1061,7 +1061,7 @@ h2 {
   overflow: hidden;
 }
 #partners .gallery img {
-  height: 70px;
+  height: 15vh;
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
