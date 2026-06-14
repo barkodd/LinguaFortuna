@@ -814,7 +814,6 @@ footer {
   width: 100%;
   margin-top: 1rem;
 
-
   .article-main {
     .grid-container {
       margin-left: 0.5rem;
@@ -928,7 +927,8 @@ footer {
     font-size: 2rem;
     font-weight: 650;
     padding-top: 1rem;
-  }  .guide-step {
+  }
+  .guide-step {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -946,7 +946,7 @@ footer {
       border-width: 0.2rem;
       margin-bottom: 2rem;
     }
-  
+
     @media screen and (min-width: 768px) {
       flex-direction: row;
       align-items: center;
@@ -1009,7 +1009,6 @@ h2 {
   font-size: 1.3rem;
   font-weight: 500;
 }
-
 
 .scroll-btn {
   position: fixed;
@@ -1127,7 +1126,6 @@ h2 {
 
 $background-color: rgb(242, 242, 242);
 
-
 #partners {
   margin-top: 0;
   width: 95%;
@@ -1159,7 +1157,6 @@ $background-color: rgb(242, 242, 242);
     }
   }
 }
-
 
 .image-gallery {
   width: 90%;
@@ -1218,7 +1215,6 @@ $background-color: rgb(242, 242, 242);
 }
 
 @media (max-width: 768px) {
-
   .image-gallery {
     width: 100%;
   }
@@ -1234,13 +1230,11 @@ $background-color: rgb(242, 242, 242);
     height: 14rem;
   }
 
- 
-
   .partners-image {
     width: 90%;
     margin: auto;
 
-    display: grid!important;
+    display: grid !important;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
 
@@ -1262,5 +1256,58 @@ $background-color: rgb(242, 242, 242);
 
     user-select: none;
     -webkit-user-drag: none;
+  }
+}
+
+.team-wrapper {
+  width: 60%;
+  margin: auto;
+}
+
+.team-gallery {
+  column-count: 2;
+  column-gap: 2rem;
+
+  width: 100%;
+}
+
+.team-gallery-item {
+  display: inline-block;
+
+  width: 100%;
+  margin-bottom: 2rem;
+
+  background: #fff;
+  padding: 1rem;
+
+  break-inside: avoid;
+  page-break-inside: avoid;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.team-gallery-item img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.team-gallery-item p {
+  line-height: 1.5;
+  font-weight: 500;
+  
+ 
+}
+
+@media (max-width: 768px) {
+  .team-wrapper {
+    width: 90%;
+  }
+
+  .team-gallery {
+    column-count: 1;
   }
 }
