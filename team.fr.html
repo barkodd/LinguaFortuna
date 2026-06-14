@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Inter:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Team: Lingua Fortuna</title>
+  </head>
+  <script src="/scripts/script.js"></script>
+
+  <body>
+    <header>
+      <div class="burger">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-label">
+          <img class="open" src="images/burger.png" alt="dropdown menu" />
+          <img
+            class="close"
+            src="images/close.png"
+            alt="dropdown menu - close"
+          />
+        </label>
+        <div class="burger-content">
+          <nav>
+            <ul>
+              <li><a class="underline" href="index.fr.html">À propos</a></li>
+              <li><a class="underline" href="team.fr.html">Notre équipe</a></li>
+              <li>
+                <a class="underline" href="articles.fr.html">Nos projets</a>
+              </li>
+              <li>
+                <a
+                  class="underline"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeSkxN9FpLsFUJl8pkUwQE58PtbcFsohN4n9_Rallz5CTq8-g/viewform?fbclid=PAZXh0bgNhZW0CMTEAAadKXThTGYjZMythenSrmJlGu_RpN26agzaRB8m6qN5E7bDAPtUPs3fKcyqxyw_aem_fL9P8D4lEDoYwo3uHcqTKA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Devenir membre</a
+                >
+              </li>
+              <li>
+                <a class="underline" href="donation.fr.html">Faire un don</a>
+              </li>
+
+              <li class="social-links">
+                <a
+                  href="https://www.facebook.com/linguafortuna/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="images/facebook.png" alt="Facebook" />
+                </a>
+                <a
+                  href="https://www.instagram.com/linguafortuna/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="images/instagram.png" alt="Instagram" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/lingua-fortuna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="images/linkedin.png" alt="LinkedIn" />
+                </a>
+              </li>
+              <li class="lang-dropdown">
+                <button id="lang-toggle"></button>
+                <div class="lang-menu">
+                  <button class="change-lang" data-lang="uk"></button>
+                  <button class="change-lang" data-lang="en"></button>
+                  <button class="change-lang" data-lang="fr"></button>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <section class="hero" id="hero">
+        <div class="hero-inner">
+          <div class="hero-logo">
+            <img src="../images/LF_logo.svg" alt="Lingua Fortuna logo" />
+            <div class="divider"></div>
+          </div>
+          <h1>
+            <span>Notre</span><br />
+            <span>Équipe</span>
+          </h1>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div class="lang-popup">
+        <div class="lang-popup-inner">
+          <h2>Welcome, Bienvenue, Ласкаво просимо</h2>
+          <div class="lang-row">
+            <button class="lang-buttons" id="ukr" aria-label="Укр"></button>
+            <button class="lang-buttons" id="eng" aria-label="Eng"></button>
+            <button class="lang-buttons" id="fr" aria-label="Fr"></button>
+          </div>
+        </div>
+      </div>
+      <script src="scripts/lang.js"></script>
+      <div class="gallery-wrapper" id="partners">
+        <section class="gallery">
+          <article class="gallery-item">
+            <img src="images/TeamAnton.png" alt="" />
+            <p>Bonjour, je m'appelle Anton ! C'est moi qui ai créé ce site.</p>
+          </article>
+          <article class="gallery-item">
+            <img src="images/TeamMathilde.jpeg" alt="" />
+            <p>
+              Bonjour, je m’appelle Mathilde ! Je suis impliquée depuis les
+              débuts de l’ASBL Lingua Fortuna, née d’une belle amitié
+              belgo-ukrainienne. Au fil du temps, les objectifs de l’association
+              ont évolué, en résonance avec le contexte géopolitique ainsi
+              qu’avec nos valeurs et nos engagements.
+            </p>
+            <p>
+              Au sein de l’ASBL, je fais ma part en mettant à profit mes
+              compétences pédagogiques et d’animation, développées à travers mon
+              métier de professeure de français et de théâtre. J’apporte un
+              soutien à la fois éducatif et humain, avec l’envie de créer du
+              lien, de favoriser l’expression et de renforcer la confiance de
+              chacun.
+            </p>
+          </article>
+
+          <article class="gallery-item">
+            <img src="images/TeamOksana.jpeg" alt="" />
+            <p>
+              Bonjour, je m’appelle Oksana. Après des études en traduction et
+              plus tard en droits humains, ainsi qu’un parcours professionnel à
+              l’international, j’ai co-fondé l’ASBL Lingua Fortuna, nourrie par
+              des rencontres, des coopération interculturelles et l’envie de
+              contribuer à un monde plus juste et solidaire.
+            </p>
+            <p>
+              Au sein de LF, je m’engage dans la création et la coordination de
+              projets éducatifs et humains, avec une attention particulière
+              portée au dialogue interculturel, à l’engagement citoyen et au
+              bien‑être. J’aime créer des espaces où chacune et chacun peut
+              apprendre, s’exprimer, prendre confiance et transformer ses idées
+              en projets porteurs de sens.
+            </p>
+          </article>
+          <article class="gallery-item">
+            <img src="images/TeamSvitlana.jpeg" alt="" />
+            <p>
+              Bonjour, je m’appelle Svitlana. Je suis co‑fondatrice de l’ASBL
+              Lingua Fortuna et infirmière de formation. J’ai rejoint LF avec
+              l’envie de prendre soin des autres et de contribuer, à ma manière,
+              à des projets humains et solidaires.
+            </p>
+            <p>
+              Au sein de l’association, je m’occupe des aspects liés à
+              l’accueil, au bien‑être et à l’attention portée aux participant·es
+              lors de nos projets. Et parce que prendre soin passe aussi par le
+              partage, ma cuisine fait partie intégrante de mon engagement,
+              créant un véritable pont culinaire entre les traditions belges,
+              ukrainiennes et d’ailleurs. À travers la nourriture, je partage un
+              peu de chez moi, je crée du lien et j’aide chacune et chacun à se
+              sentir accueilli, en sécurité et à sa place.
+            </p>
+          </article>
+          <article class="gallery-item">
+            <img src="images/TeamGil.jpg" alt="" />
+            <p>
+              Bonjour, je m’appelle Gil. Je suis l’aventure Linga Fortuna depuis
+              ses débuts et j’ai eu la chance de participer à deux de leurs
+              projets, l’un en Belgique - Ciné Club et l’autre en tant que Youth
+              Leader lors d’un échange Erasmus+ en Finlande. J’adhère pleinement
+              à leur vision, fondée sur le bien-être, le partage,
+              l’apprentissage ainsi que de nombreuses autres valeurs humaines
+              que je partage profondément. En tant que coach de hockey et grand
+              voyageur, j’essaie de transmettre mon expérience de vie afin de
+              rendre leurs voyages et leurs stages encore plus enrichissants,
+              tant sur le plan humain que personnel.
+            </p>
+          </article>
+          <article class="gallery-item">
+            <img src="images/TeamFlorian.jpg" alt="" />
+            <p>
+              Bonjour, je m'appelle Florian. Je travaille avec Lingua Fortuna
+              depuis début 2026 et la participation, en tant que Youth Leader, à
+              un échange Erasmus+ en Finlande. Comédien de formation, je suis
+              également animateur et professeur de théâtre. Je pense que, pour
+              développer le bien-être et les échanges humains riches durant les
+              stages, il faut, dès le départ, aider à tisser un rapport de
+              confiance et une envie de faire collectif au sein des groupes.
+              Nourrie de mon expérience théâtrale et pédagogique, c'est ce que
+              je tente d'apporter.
+            </p>
+          </article>
+          <article class="gallery-item">
+            <img src="images/TeamJane.jpg" alt="" />
+            <p>Bonjour, je m'appelle Jane !</p>
+            <p>
+              Je suis avant tout professeure de mathématiques, un métier qui
+              fait partie de ma vie depuis toujours. Depuis 2025, je fais partie
+              de l’organisation Lingua Fortuna, qui m’a ouvert les portes du
+              monde Erasmus+ et des activités internationales pour les jeunes.
+              Grâce à cette expérience, j’ai découvert de nouvelles façons de
+              travailler avec la jeunesse, et aujourd’hui je suis également
+              bénévole au sein de l’organisation.
+            </p>
+          </article>
+          <article class="gallery-item">
+            <img src="images/TeamWilliam.jpg" alt="" />
+            <p>
+              Bonjour, je m'appelle William. Après des études de comédien au
+              Conservatoire de Mons (Art²), je me suis lancé dans la création de
+              différents projets autour du théâtre, mais également du cinéma. Je
+              suis aussi enseignant en académie : la transmission est une valeur
+              qui me touche tout particulièrement et qui guide mon parcours.
+            </p>
+            <p>
+              Au sein de l’ASBL Lingua Fortuna, je m’engage dans la co-création
+              d’un atelier cinéma, avec pour objectif de favoriser l’autonomie
+              des jeunes. Ensemble, nous écrivons, filmons, jouons et montons un
+              court métrage, dans une dynamique collective et créative.
+            </p>
+            <p>
+              Je m’implique également dans les projets Erasmus+ en tant que
+              Youth Leader, notamment lors d’échanges internationaux, comme en
+              Finlande en 2025. Ces expériences interculturelles nourrissent ma
+              pratique et renforcent mon envie de transmettre à travers l’art.
+              J’essaie, à travers tout cela, de partager au mieux l’amour que
+              j’ai pour ces médiums.
+            </p>
+          </article>
+          <article class="gallery-item">
+            <img src="images/TeamAnastasiia.jpeg" alt="" />
+            <p>
+              Bonjour, je m’appelle Anastasiia ! En tant qu’assistante
+              administrative chez Lingua Fortuna, je participe à l’organisation
+              des événements et au suivi des différentes activités de
+              l’association. Je contribue également à la rédaction des comptes
+              rendus et à la documentation des projets menés à bien, notamment
+              dans le cadre d’Erasmus+.
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="donation">
+        <p>
+          Lingua Fortuna ©
+          <time datetime="2025-01-01">2025</time>
+        </p>
+        <p>ASBL Lingua Fortuna</p>
+        <p>BE28 7320 6412 3620</p>
+        <p>Communication : « Donation »</p>
+      </div>
+
+      <li class="social-links">
+        <a
+          href="https://www.facebook.com/linguafortuna/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/facebook.png" alt="Facebook" />
+        </a>
+        <a
+          href="https://www.instagram.com/linguafortuna/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/instagram.png" alt="Instagram" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/lingua-fortuna"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/linkedin.png" alt="LinkedIn" />
+        </a>
+      </li>
+    </footer>
+  </body>
+</html>
