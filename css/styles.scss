@@ -72,14 +72,14 @@ html[lang="uk"] {
 
 .lang-popup {
   position: fixed;
-  inset: 0; /* shorthand for top:0;left:0;right:0;bottom:0; */
+  inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(12px);
   background-color: rgba(0, 0, 0, 0.15);
   z-index: 9999;
-  pointer-events: auto; /* overlay allows pointer events, inner will take them */
+  pointer-events: auto;
 }
 
 .lang-popup-inner {
@@ -209,6 +209,7 @@ html[lang="uk"] {
   width: 12rem;
   font-size: x-large;
   font-weight: bold;
+  cursor: pointer;
 }
 #more {
   max-height: 0;
@@ -282,6 +283,7 @@ footer {
   p {
     display: flex;
     flex-direction: column;
+    font-weight: 600;
   }
 }
 // burger dropdown menu for mobile
@@ -609,6 +611,15 @@ footer {
       width: 100%;
       display: block;
     }
+    .articles-more {
+      font-size: x-large;
+      font-weight: bold;
+      display: inline-block;
+      padding: 1rem;
+      background-color: $lf-light-blue;
+      color: white;
+      margin-top: 2rem;
+    }
   }
 
   .bottom-container {
@@ -649,6 +660,7 @@ footer {
 
     .top {
       align-self: flex-start;
+
       .article-title {
         font-weight: 650;
         font-size: 2.5rem;
@@ -776,8 +788,7 @@ footer {
   .partners-image img {
     flex: 0 0 auto;
 
-    height: 15vh; 
-    width: auto;
+    width: 8vw;
 
     object-fit: contain;
 
@@ -1133,23 +1144,17 @@ $background-color: rgb(242, 242, 242);
   .gallery {
     width: 50%;
     margin: auto;
-
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-
     gap: 2rem;
-
     padding: 15px;
     background: #fff;
-
     border-radius: 10px;
-
     overflow: hidden;
-
     img {
-      height: 15vh;
+      height: 15rem !important;
       width: auto;
       object-fit: contain;
       user-select: none;

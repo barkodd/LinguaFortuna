@@ -65,14 +65,14 @@ html[lang=uk] #hero-ukr h1 {
 
 .lang-popup {
   position: fixed;
-  inset: 0; /* shorthand for top:0;left:0;right:0;bottom:0; */
+  inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(12px);
   background-color: rgba(0, 0, 0, 0.15);
   z-index: 9999;
-  pointer-events: auto; /* overlay allows pointer events, inner will take them */
+  pointer-events: auto;
 }
 
 .lang-popup-inner {
@@ -203,6 +203,7 @@ html[lang=uk] #hero-ukr h1 {
   width: 12rem;
   font-size: x-large;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #more {
@@ -273,6 +274,7 @@ footer .social-links {
 .donation p {
   display: flex;
   flex-direction: column;
+  font-weight: 600;
 }
 
 .burger {
@@ -562,6 +564,15 @@ footer .social-links {
   width: 100%;
   display: block;
 }
+.articles .top .articles-more {
+  font-size: x-large;
+  font-weight: bold;
+  display: inline-block;
+  padding: 1rem;
+  background-color: #7abacb;
+  color: white;
+  margin-top: 2rem;
+}
 .articles .bottom-container {
   display: flex;
   width: 95%;
@@ -720,8 +731,7 @@ footer .social-links {
 }
 .partners .partners-image img {
   flex: 0 0 auto;
-  height: 15vh;
-  width: auto;
+  width: 8vw;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-user-select: none;
@@ -1061,7 +1071,7 @@ h2 {
   overflow: hidden;
 }
 #partners .gallery img {
-  height: 15vh;
+  height: 15rem !important;
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
